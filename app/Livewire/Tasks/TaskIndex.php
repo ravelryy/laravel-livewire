@@ -13,9 +13,16 @@ class TaskIndex extends Component
     public $priority;
     public $deadline;
 
+    protected $rules = [
+        'title' => 'required|min:5',
+        'slug' => 'required|min:5',
+        'description' => 'required',
+        'deadline' => 'required',
+    ];
+
     public function save()
     {
-        $this->validated();
+        $this->validate();
         auth()->user()->tasks()->create($this->only(['title', 'slug', 'description', 'status', 'priority', 'deadline']));
 
         $this->reset();

@@ -4,7 +4,7 @@ namespace App\Enums;
 
 enum StatusType: string
 {
-    case STARTED = 'stared';
-    case IN_PROGRESS = 'in_progress';
-    case DONE = 'done';
+    case BERJALAN = 'stared';
+    case DALAM_PROSES = 'in_progress';
+    case SELESAI = 'done';
 }
