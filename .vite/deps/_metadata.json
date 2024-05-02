@@ -1,0 +1,25 @@
+{
+  "hash": "47f81572",
+  "configHash": "f3a6b009",
+  "lockfileHash": "eb59352a",
+  "browserHash": "581edd32",
+  "optimized": {
+    "flowbite-datepicker/Datepicker": {
+      "src": "../../node_modules/flowbite-datepicker/js/Datepicker.js",
+      "file": "flowbite-datepicker_Datepicker.js",
+      "fileHash": "d1b7c760",
+      "needsInterop": false
+    },
+    "axios": {
+      "src": "../../node_modules/axios/index.js",
+      "file": "axios.js",
+      "fileHash": "8e394479",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-CSAU5B4Q": {
+      "file": "chunk-CSAU5B4Q.js"
+    }
+  }
+}
