@@ -13,7 +13,7 @@ class TaskIndex extends Component
         $this->validate();
         auth()->user()->tasks()->create($this->form->all());
 
-        $this->reset();
+        $this->form->reset();
     }
 
     public function render()
