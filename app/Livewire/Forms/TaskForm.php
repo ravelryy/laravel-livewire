@@ -20,4 +20,9 @@ class TaskForm extends Form
         'description' => 'required',
         'deadline' => 'required',
     ];
+
+    public function createTask()
+    {
+        auth()->user()->tasks()->create($this->all());
+    }
 }
