@@ -8,8 +8,19 @@
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
+                <h1 class="flex my-7 font-bold text-lg justify-center">Buatlah tugasmu sendiri</h1>
+                @if(session('success'))
+                    <div class="flex items-center max-w-xl p-4 mb-4 mx-auto text-sm text-green-800 border border-green-300 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400 dark:border-green-800" role="alert">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                        <span class="sr-only">Info</span>
+                        <div class="ml-2">
+                            <span class="font-medium">Kamu berhasil membuat tugas</span>
+                        </div>
+                    </div>
+                @endif
                 <form class="max-w-sm mx-auto p-6" wire:submit="save">
-                    <h1 class="mb-7 font-bold text-lg">Buatlah tugasmu sendiri</h1>
                     <div class="mb-5">
                       <label for="title" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Judul</label>
                       <input wire:model="form.title" type="text" id="title" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />

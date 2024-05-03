@@ -24,5 +24,6 @@ class TaskForm extends Form
     public function createTask()
     {
         auth()->user()->tasks()->create($this->all());
+        request()->session()->flash('success', __('Task created successfully'));
     }
 }
